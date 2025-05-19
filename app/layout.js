@@ -1,4 +1,5 @@
 import '@/app/_styles/globals.css';
+import Head from 'netx/head'
 
 import { Josefin_Sans } from 'next/font/google';
 import Header from '@/app/_components/Header';
@@ -33,6 +34,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <Head>
+      <meta name="google-site-verification" content="-WPZe8czrgD10tx1k7Phwq2cwaqL3quSwrXwnfomVmw" />
+    </Head>
       <body
         className={`${josefin.className} antialiased relative flex flex-col bg-primary-950 text-primary-100 min-h-svh`}
       >
